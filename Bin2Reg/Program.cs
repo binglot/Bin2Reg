@@ -24,7 +24,8 @@ namespace Bin2Reg {
 
             var fileHandler = new FileHandler();
             var registryHandler = new RegistryHandler();
-            var encoder = new XorEncoder();
+            //var encoder = new XorEncoder();
+            var encoder = new Dpapi();
 
             var conversion = new ConversionManager(fileHandler, registryHandler, encoder);
             conversion.Run(action, registryKey, filePath);
