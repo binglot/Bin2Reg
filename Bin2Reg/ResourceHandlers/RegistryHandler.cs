@@ -1,4 +1,5 @@
 using System.Collections;
+using Bin2Reg.Interfaces;
 using Microsoft.Win32;
 
 namespace Bin2Reg.ResourceHandlers {

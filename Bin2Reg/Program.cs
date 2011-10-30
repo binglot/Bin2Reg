@@ -1,4 +1,5 @@
 ﻿using System;
+using Bin2Reg.Encoders;
 using Bin2Reg.ResourceHandlers;
 
 namespace Bin2Reg {
@@ -23,8 +24,9 @@ namespace Bin2Reg {
 
             var fileHandler = new FileHandler();
             var registryHandler = new RegistryHandler();
+            var encoder = new XorEncoder();
 
-            var conversion = new ConversionManager(fileHandler, registryHandler);
+            var conversion = new ConversionManager(fileHandler, registryHandler, encoder);
             conversion.Run(action, registryKey, filePath);
 
             Console.WriteLine(conversion.Result);

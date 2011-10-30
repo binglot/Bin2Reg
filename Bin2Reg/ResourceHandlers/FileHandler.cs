@@ -1,4 +1,5 @@
 using System.IO;
+using Bin2Reg.Interfaces;
 
 namespace Bin2Reg.ResourceHandlers {
     internal class FileHandler : IResourceHandler {        
