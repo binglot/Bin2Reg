@@ -28,3 +28,18 @@ Usage: bin2reg.exe [-s, -r] [registry_key] [file_path]
 Ex: bin2reg.exe -s Software\HiddenData "C:\my files\test.jpg"
 
 c:\> 
+
+
+===========
+Limitation
+===========
+
+The maximum size for any single Registry value entry is 1MB. (http://scilnet.fortlewis.edu/tech/NT-Server/registry.htm)
+
+
+===========
+To do
+===========
+
+If the input file exceeds the maximum size then split it and save to registry in parts.
+
