@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="ArgumentsChecker.cs" />
     <Compile Include="ConversionManager.cs" />
+    <Compile Include="Encoders\Dpapi.cs" />
     <Compile Include="Interfaces\IEncoder.cs" />
     <Compile Include="Encoders\XorEncoder.cs" />
     <Compile Include="ResourceHandlers\FileHandler.cs" />
