@@ -62,12 +62,11 @@ namespace Bin2Reg {
         private string SetKey(string s) {
             // The pattern: allow any word character including underscore and the back slash (i.e. '\')
             //              except don't let it start with the back slash.
-            //const string pattern = @"^\w[\w\\]*$";
             const string pattern = @"^\w[\w\\]*$";
 
-            //if (Regex.IsMatch(s, pattern)) {
-            //    Error += "Error: The second argument is wrong. \n";
-            //}
+            if (!Regex.IsMatch(s, pattern)) {
+                Error += "Error: The second argument is wrong. \n";
+            }
 
             return s;
         }
